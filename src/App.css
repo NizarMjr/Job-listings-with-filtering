@@ -1,38 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;700&family=Nunito+Sans:wght@200;300;400;600;700&family=Peralta&family=Poppins:wght@300;500;600&display=swap');
+
 .App {
-  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+  margin: 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-header img {
+  background-color: hsl(180, 8%, 52%);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width:529px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

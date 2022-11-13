@@ -1,0 +1,96 @@
+.list {
+    margin-top: 5rem;
+}
+
+.job-part {
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: .1s;
+}
+
+.job-part:hover {
+    border-left: 4px solid var(--primary-color);
+}
+
+.about-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-company .image {
+    margin-right: 1.5rem;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+}
+
+.company .cls {
+    margin-right: 0.5rem;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.company .new {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.company .feature {
+    color: white;
+    background-color: var(--secondary-color2);
+}
+
+.company .feature,
+.company .new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+.content .position {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.content .description {
+    font-size: 13px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.description .desc {
+    margin-right: 0.5rem;
+}
+
+.skills .skill {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 13px;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+@media (max-width:798px) {
+    .job-part {
+        flex-direction: column;
+    }
+
+    .skills {
+        margin-top: 1rem;
+    }
+}

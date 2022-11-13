@@ -1,0 +1,6 @@
+export const TypesName = {
+    FILTERJOB: "FILTERJOB",
+    CLEARJOBS: "CLEARJOBS",
+    REMOVEJOB: "REMOVEJOB",
+    FETCHJOBS: "FETCHJOBS",
+}

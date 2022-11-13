@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import FilterPart from './components/filterPart/FilterPart';
+import ListJobPart from './components/listJobPart/ListJobPart';
+import Loading from './components/loading/Loading';
 
 function App() {
+  const [time, setTime] = useState(false);
+  setTimeout(() => {
+    setTime(true);
+  }, 2000)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='bg-header'>
+        <img src='../images/bg-header-desktop.svg' alt='bg header' />
+      </div>
+      <FilterPart />
+      {time ? <ListJobPart /> : <Loading />}
+
     </div>
   );
 }

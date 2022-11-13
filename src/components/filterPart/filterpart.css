@@ -1,0 +1,78 @@
+.filter-part {
+    position: sticky;
+    top: 85px;
+    min-width: calc(100% - 250px);
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    min-height: 50px;
+}
+
+
+.filter-part .filter-list {
+    height: 100%;
+    flex: 1;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.filter-part .clear {
+    padding: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+}
+
+.clear::after {
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    width: calc(100% - 15px);
+    transform: translateX(7.5px);
+    height: 1px;
+    bottom: 10px;
+    left: 0;
+}
+
+
+.filter-list .job-filter {
+    color: var(--primary-color);
+    margin: 0 0.5rem 0.5rem;
+    background-color: var(--bg);
+    max-width: 150px;
+    padding: 0.3rem 0.4rem;
+}
+
+.job-filter .close {
+    background-color: var(--primary-color);
+    color: white;
+    margin-left: 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0.3rem 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.job-filter .close:hover {
+    background-color: var(--secondary-color2);
+}
+
+@media (max-width:529px) {
+    .filter-part {
+        position: fixed;
+        top: 10px;
+        width: calc(100% - 50px);
+    }
+}
